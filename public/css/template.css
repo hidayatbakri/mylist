@@ -1,0 +1,165 @@
+.sidebar {
+    width: 300px;
+    min-height: 100vh;
+    transition: 0.5s ease-in;
+    max-width: 100vw;
+    z-index: 999999999;
+}
+
+.sidebar-header {
+    height: 80px;
+}
+
+.sidebar-header img {
+    width: 100px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+.sidebar.mini .sidebar-header img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    object-position: -4px 0;
+}
+
+.btn-mini {
+    right: -20px;
+    transition: 0.6s ease-out;
+    z-index: 999999;
+}
+
+.sidebar.mini .btn-mini {
+    transform: rotate(180deg);
+}
+
+.sidebar.mini .sidebar-header img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.sidebar.mini {
+    width: 80px !important;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+}
+
+.sidebar-menu li {
+    padding: 8px 0px;
+    margin: 8px 0px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.sidebar.mini .sidebar-menu li {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.sidebar.mini .sidebar-menu li span,
+.sidebar.mini .sidebar-content h3 {
+    opacity: 0;
+    display: none;
+}
+
+.sidebar-menu li:hover {
+    background-color: #e3e3e3;
+    padding-left: 10px;
+}
+.sidebar-menu li.active {
+    background-color: #e3e3e3;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.header .avatar {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.dropdown-account {
+    width: 200px;
+    padding: 10px;
+    top: 70px;
+}
+.dropdown-account ul li {
+    font-size: 15px;
+    color: #606060;
+    padding: 8px 0;
+    transition: 0.3s ease-in;
+}
+
+.account-settings:hover {
+    cursor: pointer;
+}
+
+.account-settings img {
+    cursor: pointer;
+}
+
+.dropdown-account ul li:hover {
+    font-size: 15px;
+    color: #343434;
+    padding: 8px 5px;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+}
+
+.main-content {
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 300px;
+        min-height: 100vh;
+        transition: 0.5s ease-in;
+        max-width: 100vw;
+        position: fixed;
+    }
+
+    .btn-mini {
+        right: 0px;
+        transition: 0.6s ease-out;
+    }
+
+    .sidebar.mini {
+        width: 80px !important;
+        min-height: 100vh;
+        margin-left: -70px;
+        margin-right: 0 !important;
+    }
+
+    .header {
+        margin: 0 !important;
+    }
+
+    .sidebar.mini .btn-mini {
+        transform: rotate(180deg);
+        right: -50px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
